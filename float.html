@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<title>floats</title>
+​
+<style>
+	
+	*{
+		font-family: helvetica;
+		box-sizing: border-box;
+	}
+	
+	img{
+		width:auto;
+		max-width:100%;
+	}
+	
+	body{
+		margin:0;
+	}
+​
+	#mainbody{
+		max-width:1000px;
+		margin:0 auto;
+		box-shadow:0px 0px 5px -1px rgba(0,0,0,.5);
+	}
+​
+	.container:after{
+		display:block;
+		content:'';
+		clear:both;
+	}
+	
+	.colleft{
+		float:left;
+	}
+​
+	.colright{
+		float:right;
+	}
+​
+	.w50{
+		width:50%;
+	}
+	
+	.w33{
+		width:33.333333%;
+	}
+	
+	.p20{
+		padding:20px;
+	}
+	
+	.p40{
+		padding:40px;
+	}
+	
+	.tc{
+		text-align: center;
+	}
+	
+	.ko{
+		background: #000;
+		color:#fff;
+	}
+	
+	.a1{
+		background:#f00;
+		color:#fff;
+	}
+	
+	.a2{
+		background:#666;
+		color:#fff;
+	}
+	
+	.btn{
+		display:block;
+		border:1px solid #fff;
+		color:#fff;
+		padding:10px;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	#boldbox{
+		background:black;
+		color:#f00;
+		width:100px;
+		padding:10px;
+		margin:10px;
+	}
+	
+	.clkimg{
+		padding:20px;
+		background:#f00;
+/*		display:inline-block;*/
+		display:none;
+	}
+​
+	
+</style>
+​
+</head>
+<body>
+<div id="mainbody">
+<div class="container">
+	<div class="colleft w50 p40 ko">
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+		<img src="cartoon1.jpg">
+	</div>
+	<div class="colleft w50 p20">
+		<h2>heading</h2>
+		<p><b id="boldbox">Lorem</b> <i>ipsum</i> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div>
+<div class="container">
+	<div class="colleft w33 p20 tc a1">
+		<h3>subhead1</h3>
+		<p><a href="#" class="btn">Learn More</a></p>
+	</div>
+	<div class="colleft w33 p20 tc ko">
+		<h3>subhead2</h3>
+		<p><a href="#" class="btn">Learn More</a></p>
+	</div>
+	<div class="colleft w33 p20 tc a2">
+		<h3>subhead3</h3>
+		<p><a href="#" class="btn">Learn More</a></p>
+	</div>
+</div>
+<div class="container">
+	<div class="colright w50 p40 a1">
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+	</div>
+	<div class="colright w50 p20">
+		<h2>heading</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div>
+</div>
+​
+	<p>
+		<a href="#" class="clkimg"><img src="cartoon1.jpg"></a>
+	</p>
+</body>
+​
+</html>
