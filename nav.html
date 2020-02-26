@@ -1,0 +1,49 @@
+<!doctype html>
+
+<!--media is inline, bold is inline-->
+<!--but h, p they are block.-->
+
+
+
+<html>
+	<head>
+		<title>nav</title>
+        <style>
+            *{
+                box-sizing:border-box;
+                margin:0;
+            }
+            header{
+                background:#ddd;
+                position: relative; /*to use absolute for nav*/
+            }
+        
+            #logo{
+                text-transform: uppercase;
+                font-family: Verdana;
+                padding: 10px;
+            }
+            
+            
+            nav{
+                position: absolute;
+                right: 0px;
+                top:0px;
+            }
+        
+        
+        </style>
+	</head>
+	<body>
+		<header>
+			<h1 id="logo">Logo</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+	</body>
+</html>
